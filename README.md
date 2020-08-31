@@ -1,5 +1,5 @@
-# ReadMe Project
-  descrip
+# README Generator
+  Descrip
   ### Table of Contents
   [Installation](#installation)
   [Usage](#usage)
@@ -14,9 +14,9 @@
   ### License
   MIT
   ### Contributing
-  contributor did this
+  contributor
   ### Tests
-  Test
+  We did a test
   ### Questions
   For any further questions, you may contact me at github.com/mgmoreno or email me at mmoreno
   
