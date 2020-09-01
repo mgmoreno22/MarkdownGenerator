@@ -55,19 +55,15 @@ const questions = [
     }
 ];
 
-// // function to write README file
-// function writeToFile(fileName, data) {
-// }
-
 // function to initialize program
 function init() {
     inquirer.prompt(questions).then((data) => {
         console.log(data);
-        console.log(data.title);
-        console.log(data.license[0]);
         const markdown = generateMarkdown(data)
 
         fs.writeFile("README.md", markdown, (err) => {if (err)  throw err})
+
+        console.log("Your README file has been generated... Please navigate to the file titled 'README.md' in this folder to see your generated template.")
     })
 }
 

@@ -4,26 +4,30 @@ function generateMarkdown(data) {
 
   return `# ${data.title}
   ![License](https://img.shields.io/badge/LICENSE-${data.license[0]}-GREEN)
-  ${data.description}
-  ### Table of Contents
+  ## Table of Contents
+  [Description](#description)\n
   [Installation](#installation)\n
   [Usage](#usage)\n
   [License](#license)\n
   [Contributing](#contributing)\n
   [Tests](#tests)\n
   [Questions](#questions)
-  ### Installation
+  ## Description
+  ${data.description}
+  ## Installation
   ${data.installation}
-  ### Usage
+  ## Usage
   ${data.usage}
-  ### License
+  ## License
   ${data.license[0]}
-  ### Contributing
+  ## Contributing
   ${data.contributing}
-  ### Tests
+  ## Tests
   ${data.tests}
-  ### Questions
-  For any further questions, you may contact me at the following:\n github: http://github.com/${data.github}\nemail: ${data.email}
+  ## Questions
+  For any further questions, you may contact me at the following:
+  \ngithub: http://github.com/${data.github}
+  \nemail: ${data.email}
   `;
 }
 
