@@ -66,9 +66,12 @@ function init() {
         console.log(data.title);
         console.log(data.license[0]);
         const markdown = generateMarkdown(data)
+
         fs.writeFile("README.md", markdown, (err) => {if (err)  throw err})
     })
 }
+
+
 
 // function call to initialize program
 init();
