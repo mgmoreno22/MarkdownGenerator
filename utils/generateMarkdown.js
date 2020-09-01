@@ -3,7 +3,7 @@ function generateMarkdown(data) {
   // const badge = `${data.license[0]}`
 
   return `# ${data.title}
-  ![License](https://img.shields.io/badge/LICENSE-${data.license}-GREEN)
+  ![License](https://img.shields.io/badge/LICENSE-${data.license[0]}-GREEN)
   ${data.description}
   ### Table of Contents
   [Installation](#installation)\n
